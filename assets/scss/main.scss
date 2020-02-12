@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background: #f3f3f3;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calc {
+    width: 380px;
+    &_display {
+        background: #c4c4c4;
+        padding: 15px;
+        text-align: right;
+        color: #313131;
+        border-radius:16px 16px 0 0;
+    }
+    &_actions {
+        background: #171717;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+        justify-content: space-around;
+        border-radius: 0 0 16px 16px;
+        
+
+        button {
+            width: calc((380px/3)-10px);
+            height: 35px;
+            outline: none;
+            border: none;
+            margin: 5px;
+        }
+
+        .action {
+            background: #ffce00;
+        }
+    }
+}
