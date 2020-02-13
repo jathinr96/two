@@ -16,24 +16,30 @@ body {
         background: #c4c4c4;
         padding: 15px;
         text-align: right;
+        padding: 0px 15px;
+        height: 40px;
         color: #313131;
         border-radius:16px 16px 0 0;
+        line-height: 40px;
     }
     &_actions {
         background: #171717;
         display: flex;
         flex-wrap: wrap;
         padding: 15px;
-        justify-content: space-around;
         border-radius: 0 0 16px 16px;
+        padding: 15px 0px;
         
 
         button {
-            width: calc((380px/3)-10px);
+            width: calc((100% / 3) - 30px);
             height: 35px;
             outline: none;
             border: none;
-            margin: 5px;
+            margin: 5px 15px;
+        }
+        .blank {
+            opacity: 0;
         }
 
         .action {
